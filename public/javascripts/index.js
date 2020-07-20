@@ -5,7 +5,7 @@ let backgroundColor = document.body.style.background = "orange"
 
 addElement()
 
-dfdsf
+
 
 function addElement() {
     let newHeading = document.createElement('h1')
@@ -21,7 +21,9 @@ function addElement() {
     let some_dog = new Dog()
     some_dog.bark()
     // })
-    4
+
+
+    window.displayBoogers.chief()
 
 
 }

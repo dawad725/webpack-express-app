@@ -5,12 +5,18 @@ const common = require("./webpack.common");
 
 
 module.exports = merge(common, {
-    devtool: 'eval-cheap-module-source-map',
+    devtool: 'inline-source-map',
     mode: "development",
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "!!raw-loader!" + path.join(__dirname, "./views/index.ejs"),
+            filename: "index.ejs"
+        }),
+    ],
     watch: true,
     module: {
         rules: [

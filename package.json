@@ -14,11 +14,13 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "@webpack-cli/init": "^0.3.0",
     "css-loader": "^3.6.0",
     "html-webpack-plugin": "^4.3.0",
     "node-gyp": "^7.0.0",
     "nodemon": "^2.0.4",
     "raw-loader": "^4.0.1",
+    "source-map-support": "^0.5.19",
     "style-loader": "^1.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
